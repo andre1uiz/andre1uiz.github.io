@@ -5,10 +5,46 @@
   --color4: rgba(0,0,139,0.3);
 }
 
+
+*{
+  box-sizing: border-box;
+}
+
 @media only screen and (min-width : 200px) and (max-width: 600px)
 {
+  header{
+    position: fixed;
+    display: flex;
+    height: 60px;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    background: linear-gradient(45deg, var(--color2),var(--color3));
+    z-index: 3;
+  }
+  
 #navbar{
+  position: fixed;
+  top: 0;
+  justify-content: end;
+  max-width: 500px;
+  flex-wrap: wrap;
   overflow: scroll;
+}
+
+#welcome-section{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background: var(--color1);
+  color: var(--color2);
+  font-family: sans-serif;
+  left: 0;
+  width: 100vw;
+  font-size: 20px;
 }
 }
 
@@ -18,9 +54,6 @@
   border-bottom: 2px solid whitesmoke;
 }
 
-*{
-  box-sizing: border-box;
-}
 
 body{
   min-width: 800px;
