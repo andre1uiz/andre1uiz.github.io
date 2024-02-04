@@ -1,0 +1,138 @@
+:root{
+  --color1: black;
+  --color2: royalblue;
+  --color3: darkblue;
+  --color4: rgba(0,0,139,0.3);
+}
+
+@media only screen and (min-width : 200px) and (max-width: 490px)
+{
+#navbar{
+  overflow: scroll;
+}
+}
+
+.separator{
+  height: 5px;
+  border-top: 2px solid whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  min-width: 700px;
+  background-color: var(--color4);
+}
+
+header{
+  position: fixed;
+  display: flex;
+  height: 60px;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  background: linear-gradient(45deg, var(--color2),var(--color3));
+  z-index: 3;
+}
+
+#navbar{
+  position: fixed;
+  top: 0;
+  justify-content: end;
+  max-width: 500px;
+  flex-wrap: wrap;
+}
+
+#navbar ul{
+  display: flex;
+  min-width: 500px;
+  max-width: 500px;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+#navbar a{
+  color: white;
+  text-decoration-line: none;
+}
+
+#navbar a:hover{
+  text-decoration-line: underline;
+}
+
+section[class= subject]{
+  padding-top: 50px;
+}
+
+#my-photo{
+  width: 15%;
+  height: 50%;
+}
+
+#welcome-section{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background: var(--color1);
+  color: var(--color2);
+  font-family: sans-serif;
+  left: 0;
+  width: 100vw;
+  font-size: 20px;
+}
+
+#experience{
+  display: flex;
+  flex-flow: column;
+}
+
+p{
+  font-family: serif, sans-serif;
+}
+
+.field{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  margin: 0;
+  padding: 0;
+  border-bottom: 3px solid whitesmoke;  
+}
+
+.field .topic{
+  font-weight: bold;
+}
+
+.field .title{
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+
+.field .periods{
+  position: relative;
+  top: -50px;
+  left: 20px;
+  font-style: italic;
+}
+
+.work-period{
+  position: relative;
+  top: -20px; 
+  font-style: italic;
+ }
+
+ .function-container{
+  position: relative;
+  top: -30px;
+ }
+
+ .job-title{
+  list-style-type: none;
+ }
